@@ -1,0 +1,585 @@
+:root { /* Root Colors */
+    --school-color-blue: #202151;
+    --school-color-white: rgb(255, 255, 255);
+    --school-color-black: rgb(0, 0, 0);
+}
+
+* { /* Styling Everything */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+/* Navbar - Main Content */
+
+nav {/* all of navbar content */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color:var(--school-color-blue);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title { /* styling logo */
+    color: var(--school-color-white);
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-links { /* navbar links content */
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links li { /* navbar links li tags */
+    list-style: none;
+}
+
+.nav-links a { /* navbar links a tags */
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 6px 15px;
+    margin-left: 30px;
+}
+
+/* End Of Main Content */ 
+
+/* Navbar - Buttons */
+
+.button-1 { /* Styling home button */
+    background: var(--school-color-white);
+    color: var(--school-color-blue);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.button-1:hover { /* hover effect on home button */
+    background: var(--school-color-white);
+    color: var(--school-color-black);
+    text-decoration: underline solid;
+}
+
+.button-2 { /* styling about button */
+    background: var(--school-color-blue);
+    color: var(--school-color-white);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.button-2:hover { /* hover effect on about button */
+    background: var(--school-color-white);
+    color: var(--school-color-black);
+}
+
+.button-3 { /* styling clubs & councils button */
+    background: var(--school-color-blue);
+    color: var(--school-color-white);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.button-3:hover { /* hover effect on clubs & councils button */
+    background: var(--school-color-white);
+    color: var(--school-color-black);
+}
+
+.button-4 { /* styling contact button */
+    background: var(--school-color-blue);
+    color: var(--school-color-white);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.button-4:hover { /* hover effect on contact button */
+    background: var(--school-color-white);
+    color: var(--school-color-black);
+}
+
+.logo:hover { /* logo hover effect*/
+    font-size: 33px;
+}
+
+/* End Of Buttons */
+
+/* Navbar - Burger */
+
+.lines { /* lines display & cursor type */
+    display: none;
+    cursor: pointer;
+}
+
+.lines div { /* Styling all three lines */
+    width: 30px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+/* End Of Burger */
+
+/* End of Navbar */
+
+/* Home */
+
+header { /* Styling header */
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/home_image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header #logo { /* Styling logo of header */
+    width: 100px;
+    height: auto;
+    margin-top: 55px;
+    margin-left: 40px;
+}
+
+header .mainHeading { /* Styling the main title of home section */
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    word-spacing: 3.5px;
+    color: var(--school-color-black);
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    text-decoration: underline solid;
+    margin-left: 150px;
+    margin-top: -133px;
+}
+
+/* End Of Home */
+
+/* About */
+
+/* About - Information Side */
+
+#left { /* Styling left side */
+    background-color: var(--school-color-blue);
+    color: var(--school-color-white);
+    width: 40%;
+    float: left;
+    height: 100vh;
+}
+
+#line-1 { /* Styling special line */
+    height: 4px;
+    width: 28px;
+    size: 2;
+    color: var(--school-color-white);
+    background-color: var(--school-color-white);
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.about-title { /* Styling about title */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 50px;
+    letter-spacing: 4.8px;
+    word-spacing: 2px;
+    color: var(--school-color-white);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    margin-top: -5px;
+    margin-left: 50px;
+}
+
+#about-writeup { /* Styling the about writeup */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2.6px;
+    word-spacing: 4.2px;
+    color: var(--school-color-white);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.about-button { /* Styling the about read more button */
+    color: var(--school-color-white);
+    background-color: var(--school-color-blue);
+    border-color: var(--school-color-white);
+    width: 150px;
+    height: 8vh;
+    margin-left: 220px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-button:hover {
+    background-color: var(--school-color-white);
+    color: var(--school-color-blue);
+    text-decoration: underline;
+}
+
+/* End Of Information Side */
+
+/* About - Image Side */
+
+#right {
+    background-image: url(images/about_image.png);
+    background-position: center;
+    width: 60%;
+    margin-top: 0;
+    height: 100vh;
+    float: right;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2px;
+    letter-spacing: 3.2px;
+    word-spacing: 2.2px;
+    color: var(--school-color-white);
+    font-weight: bold;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+/* End Of Image Side */
+
+/* End Of About */
+
+/* Clubs/Councils */
+
+/* Clubs/Councils - Image Side */
+
+#left-side {
+    background-image: url(images/clubs_image.png);
+    background-position: center;
+    width: 60%;
+    height: 90vh;
+    float: left;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2px;
+    letter-spacing: 3.2px;
+    word-spacing: 2.2px;
+    color: var(--school-color-white);
+    font-weight: bold;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+/* End Of Image Side
+
+/* Clubs/Councils - Information Side */
+
+#right-side {
+    background-color: var(--school-color-blue);
+    color: var(--school-color-white);
+    width: 40%;
+    float: right;
+    height: 90vh;
+}
+
+#line-2 {
+    height: 4px;
+    width: 28px;
+    size: 2;
+    color: var(--school-color-white);
+    background-color: var(--school-color-white);
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.clubs-title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 50px;
+    letter-spacing: 4.8px;
+    word-spacing: 2px;
+    color: var(--school-color-white);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    margin-top: -5px;
+    margin-left: 50px;
+}
+
+#clubs-writeup {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2.6px;
+    word-spacing: 4.2px;
+    color: var(--school-color-white);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.clubs-button {
+    color: var(--school-color-white);
+    background-color: var(--school-color-blue);
+    border-color: var(--school-color-white);
+    width: 150px;
+    height: 8vh;
+    margin-left: 220px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clubs-button:hover {
+    background-color: var(--school-color-white);
+    color: var(--school-color-blue);
+    text-decoration: underline;
+}
+
+/* End Of Information Side */
+
+/* End Of Clubs/Councils */
+
+/* Connect */ 
+
+#connect {
+    background-color: var(--school-color-blue);
+    color: var(--school-color-white);
+}
+
+#line-3 {
+    height: 4px;
+    width: 28px;
+    size: 2;
+    color: var(--school-color-white);
+    background-color: var(--school-color-white);
+    margin-left: 60px;
+}
+
+.connect-title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 50px;
+    letter-spacing: 4.8px;
+    word-spacing: 2px;
+    color: var(--school-color-white);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    margin-top: -5px;
+    margin-left: 50px;
+}
+
+#connect-writeup {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2.6px;
+    word-spacing: 4.2px;
+    color: var(--school-color-white);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+/* Mobile Screen Adjustments */ 
+
+@media screen and (max-width: 1030px) { /* Max-width of 1030px */
+    .nav-links { /* Styling nav-links */
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 770px) { /* Max-width of 770px */
+/* Body */
+    
+    body { /* Styling body */
+        overflow-x: hidden;
+    }
+
+/* End Of Body */
+
+/* Navbar */
+
+    .nav-links { /* Styling nav-links */
+        position: absolute;
+        z-index: 6;
+        right: 0px;
+        height: 70vh;
+        top: 10vh;
+        background-color: var(--school-color-blue); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li { /* Styling nav-links li tags */
+        opacity: 0;
+    }
+
+    .lines { /* Stylings lines */
+        display: block;
+    }
+
+/* End Of Navbar */
+
+/* Home Section */
+
+    header { /* Adjusting header */
+        min-height: 60vh;
+    }
+
+    header #logo { /* Adjusting logo */
+        width: 12%;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    header .mainHeading { /* Adjusting mainheading */
+        font-size: 14px;
+        margin-top: -80px;
+        margin-left: 80px;
+    }
+
+/* End Of Home Section */
+
+/* About Section */
+
+    #left { /* Adjusting about section information side */
+        float: left;
+        width: 100%;
+        height: 95vh;
+    }
+
+    #line-1 { /* Adjusting special line for about title */
+        width: 25px;
+        height: 3px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .about-title { /* Adjusting the about title */
+        font-size: 40px;
+        margin-left: 35px;
+        margin-top: 0px;
+    }
+
+    #about-writeup { /* Adjusting the about information side writeup */
+        font-size: 16px;
+        margin-left: 35px;
+        margin-right: 20px;
+    }
+
+    .about-button { /* Adjusting the about read more button */
+        margin-left: 170px;
+        margin-top: 40px;
+    }
+
+    #right { /* Adjusting about section image side */
+        float: left;
+        width: 100%;
+        height: 80vh;
+    }
+
+/* End Of About Section */
+
+/* Clubs/Councils Section */
+
+    #left-side { /* Adjusting clubs/councils section image side */
+        float: left;
+        width: 100%;
+        height: 80vh;
+    }
+
+    #right-side { /* Adjusting clubs/councils section information side */
+        float: left;
+        width: 100%;
+        height: 80vh;
+    }
+
+    #line-2 { /* Adjusting special line for title */
+        width: 25px;
+        height: 3px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .clubs-title { /* Adjusting the about title */
+        font-size: 40px;
+        margin-left: 35px;
+        margin-top: 0px;
+    }
+
+    #clubs-writeup { /* Adjusting the clubs/councils writeup */
+        font-size: 16px;
+        margin-left: 35px;
+        margin-right: 20px;
+    }
+
+    .clubs-button { /* Adjusting the clubs/councils read more button */
+        margin-left: 190px;
+        margin-top: 20px;
+    }
+
+/* End Of Clubs/Councils Section */
+
+/* Connect Section */
+
+    #line-3 {
+        width: 25px;
+        height: 3px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .connect-title {
+        font-size: 40px;
+        margin-left: 35px;
+        margin-top: 0px;
+    }
+
+    #connect-writeup {
+        margin-left: 35px;
+        margin-right: 20px;
+    }
+/* End Of Connect Section */
+}
+
+.nav-active { /* Translating the nav-links */
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade { /* Nav-links animation, JS property */
+    from { /* Start */
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to { /* End */
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
